@@ -19,8 +19,8 @@ const props = defineProps({
     }
     })
 const emitMsg = ()=>{
-    emit('update:visible', true)
-    emit('update:msg', '我是子组件的msg')
+    emit('update:visible', !props.visible)
+    emit('update:msg', props.visible?'我是子组件的msg':'ooxx')
 }
 const emit =  defineEmits(['update:visible', 'update:msg'])
 </script>

@@ -2,6 +2,7 @@
 import { isMobileTerminal } from '@/utils/flexible'
 import { onBeforeMount, onMounted, reactive, ref, watch, watchEffect } from 'vue';
 import MyCom from './components/MyCom.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
 const count = ref(0)
 const elm = ref(null)
 const timer = ref(null)
@@ -49,6 +50,7 @@ const lal = () => {
 
     </div>
   </div>
+  <hello-world></hello-world>
 </template>
 <style lang="scss" scoped>
 .circle {
